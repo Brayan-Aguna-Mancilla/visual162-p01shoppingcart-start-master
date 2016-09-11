@@ -77,7 +77,10 @@ Partial Class MainForm
         Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.lblTot = New System.Windows.Forms.Label()
-        Me.ilProductos = New System.Windows.Forms.ImageList(Me.components)
+        Me.ilHombres = New System.Windows.Forms.ImageList(Me.components)
+        Me.ilMujeres = New System.Windows.Forms.ImageList(Me.components)
+        Me.ilCalzado = New System.Windows.Forms.ImageList(Me.components)
+        Me.ilAccesorio = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -302,9 +305,9 @@ Partial Class MainForm
         Me.lblCamisaDeAlgodon.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblCamisaDeAlgodon.AutoSize = True
         Me.lblCamisaDeAlgodon.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCamisaDeAlgodon.Location = New System.Drawing.Point(3, 4)
+        Me.lblCamisaDeAlgodon.Location = New System.Drawing.Point(3, 1)
         Me.lblCamisaDeAlgodon.Name = "lblCamisaDeAlgodon"
-        Me.lblCamisaDeAlgodon.Size = New System.Drawing.Size(141, 21)
+        Me.lblCamisaDeAlgodon.Size = New System.Drawing.Size(175, 28)
         Me.lblCamisaDeAlgodon.TabIndex = 0
         Me.lblCamisaDeAlgodon.Text = "Camisa de Algodón"
         '
@@ -313,9 +316,9 @@ Partial Class MainForm
         Me.lblPrecioCamisaAlgodon.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblPrecioCamisaAlgodon.AutoSize = True
         Me.lblPrecioCamisaAlgodon.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioCamisaAlgodon.Location = New System.Drawing.Point(3, 35)
+        Me.lblPrecioCamisaAlgodon.Location = New System.Drawing.Point(3, 31)
         Me.lblPrecioCamisaAlgodon.Name = "lblPrecioCamisaAlgodon"
-        Me.lblPrecioCamisaAlgodon.Size = New System.Drawing.Size(51, 21)
+        Me.lblPrecioCamisaAlgodon.Size = New System.Drawing.Size(62, 28)
         Me.lblPrecioCamisaAlgodon.TabIndex = 1
         Me.lblPrecioCamisaAlgodon.Text = "$ 120"
         '
@@ -338,9 +341,9 @@ Partial Class MainForm
         Me.lblBlazer.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblBlazer.AutoSize = True
         Me.lblBlazer.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBlazer.Location = New System.Drawing.Point(3, 4)
+        Me.lblBlazer.Location = New System.Drawing.Point(3, 0)
         Me.lblBlazer.Name = "lblBlazer"
-        Me.lblBlazer.Size = New System.Drawing.Size(157, 21)
+        Me.lblBlazer.Size = New System.Drawing.Size(158, 30)
         Me.lblBlazer.TabIndex = 0
         Me.lblBlazer.Text = "Blazer Mezcla de Lana"
         '
@@ -349,9 +352,9 @@ Partial Class MainForm
         Me.lblPrecioBlazer.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblPrecioBlazer.AutoSize = True
         Me.lblPrecioBlazer.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioBlazer.Location = New System.Drawing.Point(3, 35)
+        Me.lblPrecioBlazer.Location = New System.Drawing.Point(3, 31)
         Me.lblPrecioBlazer.Name = "lblPrecioBlazer"
-        Me.lblPrecioBlazer.Size = New System.Drawing.Size(51, 21)
+        Me.lblPrecioBlazer.Size = New System.Drawing.Size(62, 28)
         Me.lblPrecioBlazer.TabIndex = 1
         Me.lblPrecioBlazer.Text = "$ 240"
         '
@@ -374,9 +377,9 @@ Partial Class MainForm
         Me.lblJersey.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblJersey.AutoSize = True
         Me.lblJersey.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblJersey.Location = New System.Drawing.Point(3, 4)
+        Me.lblJersey.Location = New System.Drawing.Point(3, 1)
         Me.lblJersey.Name = "lblJersey"
-        Me.lblJersey.Size = New System.Drawing.Size(127, 21)
+        Me.lblJersey.Size = New System.Drawing.Size(159, 28)
         Me.lblJersey.TabIndex = 0
         Me.lblJersey.Text = "Jersey Cuello Pico"
         '
@@ -385,9 +388,9 @@ Partial Class MainForm
         Me.lblPrecioJersey.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblPrecioJersey.AutoSize = True
         Me.lblPrecioJersey.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioJersey.Location = New System.Drawing.Point(3, 35)
+        Me.lblPrecioJersey.Location = New System.Drawing.Point(3, 31)
         Me.lblPrecioJersey.Name = "lblPrecioJersey"
-        Me.lblPrecioJersey.Size = New System.Drawing.Size(51, 21)
+        Me.lblPrecioJersey.Size = New System.Drawing.Size(62, 28)
         Me.lblPrecioJersey.TabIndex = 1
         Me.lblPrecioJersey.Text = "$ 160"
         '
@@ -410,9 +413,9 @@ Partial Class MainForm
         Me.lblPolo.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblPolo.AutoSize = True
         Me.lblPolo.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPolo.Location = New System.Drawing.Point(3, 4)
+        Me.lblPolo.Location = New System.Drawing.Point(3, 1)
         Me.lblPolo.Name = "lblPolo"
-        Me.lblPolo.Size = New System.Drawing.Size(152, 21)
+        Me.lblPolo.Size = New System.Drawing.Size(187, 28)
         Me.lblPolo.TabIndex = 0
         Me.lblPolo.Text = "Polo Cuello Redondo"
         '
@@ -421,9 +424,9 @@ Partial Class MainForm
         Me.lblPrecioPolo.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblPrecioPolo.AutoSize = True
         Me.lblPrecioPolo.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioPolo.Location = New System.Drawing.Point(3, 35)
+        Me.lblPrecioPolo.Location = New System.Drawing.Point(3, 31)
         Me.lblPrecioPolo.Name = "lblPrecioPolo"
-        Me.lblPrecioPolo.Size = New System.Drawing.Size(42, 21)
+        Me.lblPrecioPolo.Size = New System.Drawing.Size(51, 28)
         Me.lblPrecioPolo.TabIndex = 1
         Me.lblPrecioPolo.Text = "$ 70"
         '
@@ -535,9 +538,9 @@ Partial Class MainForm
         Me.lblCant1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblCant1.AutoSize = True
         Me.lblCant1.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCant1.Location = New System.Drawing.Point(298, 23)
+        Me.lblCant1.Location = New System.Drawing.Point(298, 19)
         Me.lblCant1.Name = "lblCant1"
-        Me.lblCant1.Size = New System.Drawing.Size(19, 21)
+        Me.lblCant1.Size = New System.Drawing.Size(19, 28)
         Me.lblCant1.TabIndex = 3
         Me.lblCant1.Text = "0"
         '
@@ -546,9 +549,9 @@ Partial Class MainForm
         Me.lblCant2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblCant2.AutoSize = True
         Me.lblCant2.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCant2.Location = New System.Drawing.Point(298, 90)
+        Me.lblCant2.Location = New System.Drawing.Point(298, 86)
         Me.lblCant2.Name = "lblCant2"
-        Me.lblCant2.Size = New System.Drawing.Size(19, 21)
+        Me.lblCant2.Size = New System.Drawing.Size(19, 28)
         Me.lblCant2.TabIndex = 3
         Me.lblCant2.Text = "0"
         '
@@ -557,9 +560,9 @@ Partial Class MainForm
         Me.lblCant3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblCant3.AutoSize = True
         Me.lblCant3.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCant3.Location = New System.Drawing.Point(298, 157)
+        Me.lblCant3.Location = New System.Drawing.Point(298, 153)
         Me.lblCant3.Name = "lblCant3"
-        Me.lblCant3.Size = New System.Drawing.Size(19, 21)
+        Me.lblCant3.Size = New System.Drawing.Size(19, 28)
         Me.lblCant3.TabIndex = 3
         Me.lblCant3.Text = "0"
         '
@@ -568,9 +571,9 @@ Partial Class MainForm
         Me.lblCant4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblCant4.AutoSize = True
         Me.lblCant4.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCant4.Location = New System.Drawing.Point(298, 224)
+        Me.lblCant4.Location = New System.Drawing.Point(298, 220)
         Me.lblCant4.Name = "lblCant4"
-        Me.lblCant4.Size = New System.Drawing.Size(19, 21)
+        Me.lblCant4.Size = New System.Drawing.Size(19, 28)
         Me.lblCant4.TabIndex = 3
         Me.lblCant4.Text = "0"
         '
@@ -597,9 +600,9 @@ Partial Class MainForm
         Me.lblTituloProducto.AutoSize = True
         Me.lblTituloProducto.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTituloProducto.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblTituloProducto.Location = New System.Drawing.Point(125, 6)
+        Me.lblTituloProducto.Location = New System.Drawing.Point(115, 4)
         Me.lblTituloProducto.Name = "lblTituloProducto"
-        Me.lblTituloProducto.Size = New System.Drawing.Size(101, 19)
+        Me.lblTituloProducto.Size = New System.Drawing.Size(121, 23)
         Me.lblTituloProducto.TabIndex = 1
         Me.lblTituloProducto.Text = "LOREM IPSUM"
         '
@@ -642,9 +645,9 @@ Partial Class MainForm
         Me.lblPrecio.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblPrecio.AutoSize = True
         Me.lblPrecio.Font = New System.Drawing.Font("Segoe UI Symbol", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio.Location = New System.Drawing.Point(33, 1)
+        Me.lblPrecio.Location = New System.Drawing.Point(19, 0)
         Me.lblPrecio.Name = "lblPrecio"
-        Me.lblPrecio.Size = New System.Drawing.Size(106, 46)
+        Me.lblPrecio.Size = New System.Drawing.Size(134, 48)
         Me.lblPrecio.TabIndex = 0
         Me.lblPrecio.Text = "$ 120"
         '
@@ -653,9 +656,9 @@ Partial Class MainForm
         Me.lblTallas.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblTallas.AutoSize = True
         Me.lblTallas.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTallas.Location = New System.Drawing.Point(63, 53)
+        Me.lblTallas.Location = New System.Drawing.Point(57, 50)
         Me.lblTallas.Name = "lblTallas"
-        Me.lblTallas.Size = New System.Drawing.Size(46, 21)
+        Me.lblTallas.Size = New System.Drawing.Size(58, 28)
         Me.lblTallas.TabIndex = 1
         Me.lblTallas.Text = "Tallas"
         '
@@ -664,9 +667,9 @@ Partial Class MainForm
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(17, 87)
+        Me.Label2.Location = New System.Drawing.Point(13, 80)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(138, 21)
+        Me.Label2.Size = New System.Drawing.Size(146, 36)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "XS   S   M   L   XL"
         '
@@ -717,9 +720,9 @@ Partial Class MainForm
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(98, 4)
+        Me.Label1.Location = New System.Drawing.Point(91, 1)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(78, 13)
+        Me.Label1.Size = New System.Drawing.Size(93, 19)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Tienda Virtual"
         '
@@ -768,11 +771,11 @@ Partial Class MainForm
         Me.lblTotal.AutoSize = True
         Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotal.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblTotal.Location = New System.Drawing.Point(299, 2)
+        Me.lblTotal.Location = New System.Drawing.Point(287, 0)
         Me.lblTotal.Margin = New System.Windows.Forms.Padding(0)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Padding = New System.Windows.Forms.Padding(3, 0, 0, 4)
-        Me.lblTotal.Size = New System.Drawing.Size(53, 45)
+        Me.lblTotal.Size = New System.Drawing.Size(65, 49)
         Me.lblTotal.TabIndex = 1
         Me.lblTotal.Text = "$0"
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -783,24 +786,51 @@ Partial Class MainForm
         Me.lblTot.AutoSize = True
         Me.lblTot.Font = New System.Drawing.Font("Segoe UI Light", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTot.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.lblTot.Location = New System.Drawing.Point(3, 10)
+        Me.lblTot.Location = New System.Drawing.Point(3, 7)
         Me.lblTot.Name = "lblTot"
-        Me.lblTot.Size = New System.Drawing.Size(58, 28)
+        Me.lblTot.Size = New System.Drawing.Size(71, 35)
         Me.lblTot.TabIndex = 2
         Me.lblTot.Text = "Total"
         '
-        'ilProductos
+        'ilHombres
         '
-        Me.ilProductos.ImageStream = CType(resources.GetObject("ilProductos.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ilProductos.TransparentColor = System.Drawing.Color.Transparent
-        Me.ilProductos.Images.SetKeyName(0, "hombres-01.jpg")
-        Me.ilProductos.Images.SetKeyName(1, "hombres-02.jpg")
-        Me.ilProductos.Images.SetKeyName(2, "hombres-03.jpg")
-        Me.ilProductos.Images.SetKeyName(3, "hombres-04.jpg")
+        Me.ilHombres.ImageStream = CType(resources.GetObject("ilHombres.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ilHombres.TransparentColor = System.Drawing.Color.Transparent
+        Me.ilHombres.Images.SetKeyName(0, "hombres-01.jpg")
+        Me.ilHombres.Images.SetKeyName(1, "hombres-02.jpg")
+        Me.ilHombres.Images.SetKeyName(2, "hombres-03.jpg")
+        Me.ilHombres.Images.SetKeyName(3, "hombres-04.jpg")
+        '
+        'ilMujeres
+        '
+        Me.ilMujeres.ImageStream = CType(resources.GetObject("ilMujeres.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ilMujeres.TransparentColor = System.Drawing.Color.Transparent
+        Me.ilMujeres.Images.SetKeyName(0, "mujeres-01.jpg")
+        Me.ilMujeres.Images.SetKeyName(1, "mujeres-02.jpg")
+        Me.ilMujeres.Images.SetKeyName(2, "mujeres-03.jpg")
+        Me.ilMujeres.Images.SetKeyName(3, "mujeres-04.jpg")
+        '
+        'ilCalzado
+        '
+        Me.ilCalzado.ImageStream = CType(resources.GetObject("ilCalzado.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ilCalzado.TransparentColor = System.Drawing.Color.Transparent
+        Me.ilCalzado.Images.SetKeyName(0, "calzado-01.jpg")
+        Me.ilCalzado.Images.SetKeyName(1, "calzado-02.jpg")
+        Me.ilCalzado.Images.SetKeyName(2, "calzado-03.jpg")
+        Me.ilCalzado.Images.SetKeyName(3, "calzado-04.jpg")
+        '
+        'ilAccesorio
+        '
+        Me.ilAccesorio.ImageStream = CType(resources.GetObject("ilAccesorio.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ilAccesorio.TransparentColor = System.Drawing.Color.Transparent
+        Me.ilAccesorio.Images.SetKeyName(0, "accesorios-01.jpg")
+        Me.ilAccesorio.Images.SetKeyName(1, "accesorios-02.jpg")
+        Me.ilAccesorio.Images.SetKeyName(2, "accesorios-03.jpg")
+        Me.ilAccesorio.Images.SetKeyName(3, "accesorios-04.jpg")
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(375, 657)
@@ -857,7 +887,7 @@ Partial Class MainForm
     Friend WithEvents btnComprar As Button
     Friend WithEvents TableLayoutPanel13 As TableLayoutPanel
     Friend WithEvents lblTotal As Label
-    Friend WithEvents ilProductos As ImageList
+    Friend WithEvents ilHombres As ImageList
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents lblPrecio As Label
     Friend WithEvents btnComprar1 As Button
@@ -896,4 +926,7 @@ Partial Class MainForm
     Friend WithEvents lblCant2 As Label
     Friend WithEvents lblCant3 As Label
     Friend WithEvents lblCant4 As Label
+    Friend WithEvents ilMujeres As ImageList
+    Friend WithEvents ilCalzado As ImageList
+    Friend WithEvents ilAccesorio As ImageList
 End Class
