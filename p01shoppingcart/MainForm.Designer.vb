@@ -752,8 +752,8 @@ Partial Class MainForm
         'TableLayoutPanel13
         '
         Me.TableLayoutPanel13.ColumnCount = 2
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.47727!))
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.52273!))
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.47727!))
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.52273!))
         Me.TableLayoutPanel13.Controls.Add(Me.lblTotal, 1, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.lblTot, 0, 0)
         Me.TableLayoutPanel13.Location = New System.Drawing.Point(12, 557)
@@ -778,7 +778,7 @@ Partial Class MainForm
         Me.lblTotal.Size = New System.Drawing.Size(75, 49)
         Me.lblTotal.TabIndex = 1
         Me.lblTotal.Text = "$ 0"
-        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblTot
         '
