@@ -77,10 +77,10 @@ Partial Class MainForm
         Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.lblTot = New System.Windows.Forms.Label()
-        Me.ilHombres = New System.Windows.Forms.ImageList(Me.components)
         Me.ilMujeres = New System.Windows.Forms.ImageList(Me.components)
         Me.ilCalzado = New System.Windows.Forms.ImageList(Me.components)
         Me.ilAccesorio = New System.Windows.Forms.ImageList(Me.components)
+        Me.ilHombres = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -151,8 +151,8 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnHombres.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHombres.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHombres.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnHombres.Font = New System.Drawing.Font("Segoe UI Light", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHombres.ForeColor = System.Drawing.Color.SteelBlue
         Me.btnHombres.Location = New System.Drawing.Point(7, 3)
         Me.btnHombres.Name = "btnHombres"
         Me.btnHombres.Size = New System.Drawing.Size(79, 32)
@@ -166,8 +166,8 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMujeres.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMujeres.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMujeres.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnMujeres.Font = New System.Drawing.Font("Segoe UI Light", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMujeres.ForeColor = System.Drawing.Color.SteelBlue
         Me.btnMujeres.Location = New System.Drawing.Point(92, 3)
         Me.btnMujeres.Name = "btnMujeres"
         Me.btnMujeres.Size = New System.Drawing.Size(79, 32)
@@ -181,8 +181,8 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCalzado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCalzado.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalzado.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnCalzado.Font = New System.Drawing.Font("Segoe UI Light", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalzado.ForeColor = System.Drawing.Color.SteelBlue
         Me.btnCalzado.Location = New System.Drawing.Point(177, 3)
         Me.btnCalzado.Name = "btnCalzado"
         Me.btnCalzado.Size = New System.Drawing.Size(79, 32)
@@ -196,8 +196,8 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnAccesorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAccesorios.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAccesorios.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnAccesorios.Font = New System.Drawing.Font("Segoe UI Light", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAccesorios.ForeColor = System.Drawing.Color.SteelBlue
         Me.btnAccesorios.Location = New System.Drawing.Point(262, 3)
         Me.btnAccesorios.Name = "btnAccesorios"
         Me.btnAccesorios.Size = New System.Drawing.Size(82, 32)
@@ -666,10 +666,10 @@ Partial Class MainForm
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 80)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(9, 86)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(146, 36)
+        Me.Label2.Size = New System.Drawing.Size(155, 23)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "XS   S   M   L   XL"
         '
@@ -771,13 +771,13 @@ Partial Class MainForm
         Me.lblTotal.AutoSize = True
         Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotal.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblTotal.Location = New System.Drawing.Point(287, 0)
+        Me.lblTotal.Location = New System.Drawing.Point(277, 0)
         Me.lblTotal.Margin = New System.Windows.Forms.Padding(0)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Padding = New System.Windows.Forms.Padding(3, 0, 0, 4)
-        Me.lblTotal.Size = New System.Drawing.Size(65, 49)
+        Me.lblTotal.Size = New System.Drawing.Size(75, 49)
         Me.lblTotal.TabIndex = 1
-        Me.lblTotal.Text = "$0"
+        Me.lblTotal.Text = "$ 0"
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblTot
@@ -791,15 +791,6 @@ Partial Class MainForm
         Me.lblTot.Size = New System.Drawing.Size(71, 35)
         Me.lblTot.TabIndex = 2
         Me.lblTot.Text = "Total"
-        '
-        'ilHombres
-        '
-        Me.ilHombres.ImageStream = CType(resources.GetObject("ilHombres.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ilHombres.TransparentColor = System.Drawing.Color.Transparent
-        Me.ilHombres.Images.SetKeyName(0, "hombres-01.jpg")
-        Me.ilHombres.Images.SetKeyName(1, "hombres-02.jpg")
-        Me.ilHombres.Images.SetKeyName(2, "hombres-03.jpg")
-        Me.ilHombres.Images.SetKeyName(3, "hombres-04.jpg")
         '
         'ilMujeres
         '
@@ -827,6 +818,15 @@ Partial Class MainForm
         Me.ilAccesorio.Images.SetKeyName(1, "accesorios-02.jpg")
         Me.ilAccesorio.Images.SetKeyName(2, "accesorios-03.jpg")
         Me.ilAccesorio.Images.SetKeyName(3, "accesorios-04.jpg")
+        '
+        'ilHombres
+        '
+        Me.ilHombres.ImageStream = CType(resources.GetObject("ilHombres.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ilHombres.TransparentColor = System.Drawing.Color.Transparent
+        Me.ilHombres.Images.SetKeyName(0, "hombres-01.jpg")
+        Me.ilHombres.Images.SetKeyName(1, "hombres-02.jpg")
+        Me.ilHombres.Images.SetKeyName(2, "hombres-03.jpg")
+        Me.ilHombres.Images.SetKeyName(3, "hombres-04.jpg")
         '
         'MainForm
         '
@@ -887,7 +887,6 @@ Partial Class MainForm
     Friend WithEvents btnComprar As Button
     Friend WithEvents TableLayoutPanel13 As TableLayoutPanel
     Friend WithEvents lblTotal As Label
-    Friend WithEvents ilHombres As ImageList
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents lblPrecio As Label
     Friend WithEvents btnComprar1 As Button
@@ -929,4 +928,5 @@ Partial Class MainForm
     Friend WithEvents ilMujeres As ImageList
     Friend WithEvents ilCalzado As ImageList
     Friend WithEvents ilAccesorio As ImageList
+    Friend WithEvents ilHombres As ImageList
 End Class

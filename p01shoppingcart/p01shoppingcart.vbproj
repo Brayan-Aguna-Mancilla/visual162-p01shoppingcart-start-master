@@ -78,6 +78,12 @@
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MensajeDeCompra.Designer.vb">
+      <DependentUpon>MensajeDeCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeDeCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,6 +103,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeDeCompra.resx">
+      <DependentUpon>MensajeDeCompra.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

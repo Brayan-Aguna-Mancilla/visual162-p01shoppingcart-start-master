@@ -18,13 +18,24 @@
             End If
             lblTotal.Text = "$" & CStr(Total)
         Else
-            If C2 = 0 AndAlso C3 = 0 AndAlso C4 = 0 Then
-                C1 = C1
-                lblCant1.Text = CStr(C1)
-                lblTotal.Text = "$ 0"
-            Else
-                C1 = C1
-                lblCant1.Text = CStr(C1)
+            If Hombre Then
+                If C2 = 0 AndAlso C3 = 0 AndAlso C4 = 0 AndAlso M1 = 0 AndAlso M2 = 0 AndAlso M3 = 0 AndAlso M4 = 0 Then
+                    C1 = C1
+                    lblCant1.Text = CStr(C1)
+                    lblTotal.Text = "$ 0"
+                Else
+                    C1 = C1
+                    lblCant1.Text = CStr(C1)
+                End If
+            ElseIf Mujer Then
+                If M2 = 0 AndAlso M3 = 0 AndAlso M4 = 0 AndAlso C1 = 0 AndAlso C2 = 0 AndAlso C3 = 0 AndAlso C4 = 0 Then
+                    M1 = M1
+                    lblCant1.Text = CStr(M1)
+                    lblTotal.Text = "$ 0"
+                Else
+                    M1 = M1
+                    lblCant1.Text = CStr(M1)
+                End If
             End If
         End If
     End Sub
@@ -145,7 +156,8 @@
     End Sub
 
     Private Sub btnComprar_Click(sender As Object, e As EventArgs) Handles btnComprar.Click
-        'Me.Show(MensajeDeCompraExitosa)
+        'Dim Mensaje As New MensajeDeCompra
+        'Mensaje.Show()
     End Sub
 
     Private Sub btnFlecha32_Click(sender As Object, e As EventArgs) Handles btnFlecha32.Click
@@ -186,21 +198,18 @@
 
     Private Sub btnFlecha12_Click(sender As Object, e As EventArgs) Handles btnFlecha12.Click
         If CInt(lblCant1.Text) >= 0 Then
-            C1 = C1 + 1
-            lblCant1.Text = CStr(C1)
             If Hombre Then
+                C1 = C1 + 1
+                lblCant1.Text = CStr(C1)
                 Total = Total + 120
             ElseIf Mujer Then
+                M1 = M1 + 1
+                lblCant1.Text = CStr(M1)
                 Total = Total + 80
             End If
             lblTotal.Text = "$" & CStr(Total)
-            End If
+        End If
     End Sub
-
-    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles Me.Load
-
-    End Sub
-
     Private Sub btnHombres_Click(sender As Object, e As EventArgs) Handles btnHombres.Click
         Hombre = True
         Mujer = False
@@ -225,7 +234,7 @@
         lblPrecioJersey.Text = "$ 160"
 
         lblPolo.Text = "Polo Cuello Redondo"
-        lblPrecioPolo.Text = "$ 80"
+        lblPrecioPolo.Text = "$ 70"
     End Sub
 
     Private Sub btnMujeres_Click(sender As Object, e As EventArgs) Handles btnMujeres.Click
